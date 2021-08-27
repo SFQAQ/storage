@@ -10,6 +10,7 @@ ConnetionConfig:
   DownlinkOnly: 4 # Time limit when the connection is closed after the uplink is closed, Second
   BufferSize: 64 # The internal cache size of each connection, kB 
 Nodes:
+ 
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, , Proxypanel
     ApiConfig:
@@ -23,6 +24,8 @@ Nodes:
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: # ./rulelist Path to local rulelist file
+
+
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, , Proxypanel
     ApiConfig:
@@ -36,6 +39,7 @@ Nodes:
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: # ./rulelist Path to local rulelist file
+
       
     ControllerConfig:
       ListenIP: 0.0.0.0 # IP address you want to listen
